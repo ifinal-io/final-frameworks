@@ -26,10 +26,8 @@
 
     <groupId>org.ifinalframework.data</groupId>
     <artifactId>final-data</artifactId>
-    <version>1.6.0-SNAPSHOT</version>
     <name>final-data</name>
     <description>Demo project for Spring Boot</description>
-
 
     <modules>
         <module>final-data-core</module>
