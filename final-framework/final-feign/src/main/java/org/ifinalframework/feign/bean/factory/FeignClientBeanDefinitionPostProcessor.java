@@ -32,10 +32,12 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * FeignClientBean
  *
+ * URL使用{@linkplain #DEFAULT_GATEWAY_URL spring.cloud.openfeign.gateway.url}默认配置
+ *
  * @author iimik
  * @see org.springframework.cloud.openfeign.FeignClientsRegistrar
- * @since 1.6.0
  * @see org.ifinalframework.feign.javassist.FeignClientsRegistrarJavaAssistProcessor
+ * @since 1.6.0
  **/
 @Slf4j
 @Component
@@ -59,11 +61,11 @@ public class FeignClientBeanDefinitionPostProcessor implements BeanDefinitionReg
 
                 if (!hasPropertyValue(url) && !hasPropertyValue(name)) {
                     // 没有配置 name 和 url，使用默认的 url
-                    removeAndReplacePropertyValue(propertyValues,url,"url",DEFAULT_GATEWAY_URL);
+                    removeAndReplacePropertyValue(propertyValues, url, "url", DEFAULT_GATEWAY_URL);
                 }
 
-                removeAndReplacePropertyValue(propertyValues,contextId,"contextId",beanClassName);
-                removeAndReplacePropertyValue(propertyValues,name,"name",beanClassName);
+                removeAndReplacePropertyValue(propertyValues, contextId, "contextId", beanClassName);
+                removeAndReplacePropertyValue(propertyValues, name, "name", beanClassName);
 
             }
 
@@ -71,17 +73,17 @@ public class FeignClientBeanDefinitionPostProcessor implements BeanDefinitionReg
         }
     }
 
-    private void removeAndReplacePropertyValue(MutablePropertyValues propertyValues,PropertyValue propertyValue, String name,String value ) {
+    private void removeAndReplacePropertyValue(MutablePropertyValues propertyValues, PropertyValue propertyValue, String name, String value) {
         if (!hasPropertyValue(propertyValue)) {
-            if(Objects.nonNull(propertyValue)) {
+            if (Objects.nonNull(propertyValue)) {
                 propertyValues.removePropertyValue(propertyValue);
                 propertyValues.add(name, value);
             }
-            logger.info("==> set FeignClientFactoryBean {}={}", name,value);
+            logger.info("==> set FeignClientFactoryBean {}={}", name, value);
         }
     }
 
-    private boolean hasPropertyValue(PropertyValue propertyValue){
+    private boolean hasPropertyValue(PropertyValue propertyValue) {
         return Objects.nonNull(propertyValue) && !"".equals(propertyValue.getValue());
     }
 }
