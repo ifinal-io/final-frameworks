@@ -98,9 +98,7 @@ public class FinalSecurityAutoConfiguration {
     }
 
     @Bean
-    public SecurityFilterChain corsSecurityFilterChain(ApplicationContext applicationContext, HttpSecurity http,
-                                                       CorsProperties corsProperties,
-                                                       SecurityProperties securityProperties) throws Exception {
+    public SecurityFilterChain corsSecurityFilterChain(ApplicationContext applicationContext, HttpSecurity http, CorsProperties corsProperties, SecurityProperties securityProperties) throws Exception {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         if (Objects.nonNull(corsProperties.getAllowedHeaders()) && corsProperties.getAllowedHeaders().length > 0) {
             corsConfiguration.setAllowedHeaders(Arrays.asList(corsProperties.getAllowedHeaders()));
