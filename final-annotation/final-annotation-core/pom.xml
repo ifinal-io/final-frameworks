@@ -70,6 +70,12 @@
             <artifactId>auto-service</artifactId>
             <scope>provided</scope>
             <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
         <dependency>
