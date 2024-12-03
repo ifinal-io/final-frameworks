@@ -28,7 +28,13 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import java.util.List;
 
 /**
- * HeadersRequestInterceptor
+ * 请求头拦截器
+ *
+ * 在请求时添加以下请求头
+ * <ul>
+ *     <li>{@linkplain HttpHeaders#COOKIE Cookie}</li>
+ *     <li>{@linkplain HttpHeaders#AUTHORIZATION authorization}</li>
+ * </ul>
  *
  * @author iimik
  * @since 1.5.6
@@ -36,8 +42,14 @@ import java.util.List;
 @Component
 public class HeadersRequestInterceptor implements RequestInterceptor {
 
+    /**
+     * 默认要添加的请求头列表
+     */
     private static final List<String> DEFAULT_HEADERS = List.of(HttpHeaders.COOKIE, HttpHeaders.AUTHORIZATION);
 
+    /**
+     * 要添加的请求头列表
+     */
     private final List<String> headers;
 
     public HeadersRequestInterceptor(List<String> headers) {
@@ -52,7 +64,7 @@ public class HeadersRequestInterceptor implements RequestInterceptor {
     public void apply(RequestTemplate requestTemplate) {
         final RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
         if (requestAttributes instanceof ServletRequestAttributes servletRequestAttributes) {
-
+            // 当不存在特定的请求头时，添加对应的请求头
             headers.forEach(header -> {
                 final String value = servletRequestAttributes.getRequest().getHeader(header);
                 if (value != null) {
