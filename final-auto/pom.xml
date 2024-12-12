@@ -26,7 +26,7 @@
     <groupId>org.ifinalframework.auto</groupId>
     <artifactId>final-auto</artifactId>
     <name>final-auto</name>
-    <description>Demo project for Spring Boot</description>
+    <description>编译时自动生成代码</description>
     <packaging>pom</packaging>
 
     <modules>
@@ -64,9 +64,9 @@
 
     <developers>
         <developer>
-            <email>569553290@qq.com</email>
-            <id>likly</id>
-            <name>likly</name>
+            <email>iimik@qq.com</email>
+            <id>iimik</id>
+            <name>iimik</name>
             <roles>
                 <role>Owner</role>
             </roles>
