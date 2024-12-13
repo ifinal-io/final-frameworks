@@ -16,6 +16,15 @@
 
 `final-framework`致力于提供简单、灵活且功能强大的`java`开发脚手架。
 
+## 模块
+
+* `final-annotation`: 定义核心注解。
+* `final-framework`: 基础框架
+* `final-data`: 数据操作
+  * `final-data-mybatis`: 通用mybatis
+* `final-boot`: 快速集成starters
+* `final-auto`: 注解处理器
+
 ## 特性
 
 ### 资源导入
