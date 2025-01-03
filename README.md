@@ -29,7 +29,8 @@
 
 | 组件            | 当前版本     | 最新版本                                                                                                                                                                                                   |
 |---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spring-boot` | `3.4.1`  | [![Maven Central](https://img.shields.io/maven-central/v/org.springframework.boot/spring-boot-starter-parent?label=maven&color=success)](https://mvnrepository.com/search?q=org.ifinal.finalframework) |
+| `spring-boot` | `3.4.1`  | [![Maven Central](https://img.shields.io/maven-central/v/org.springframework.boot/spring-boot-starter-parent?label=maven&color=success)](https://mvnrepository.com/search?q=org.springframework.boot) |
+| `mybatis` | `3.5.19` | [![Maven Central](https://img.shields.io/maven-central/v/org.mybatis/mybatis?label=maven&color=success)](https://mvnrepository.com/search?q=org.mybatis) |
 
 
 ## 特性
