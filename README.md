@@ -1,14 +1,14 @@
 # final-framework
 
-![CI](https://github.com/final-projects/final-framework/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ifinal-io/final-frameworks/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/github/ifinal-io/final-frameworks/graph/badge.svg?token=31vxLbJ33g)](https://codecov.io/github/ifinal-io/final-frameworks)
 [![GitHub](https://img.shields.io/github/license/final-projects/final-framework)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Maven Central](https://img.shields.io/maven-central/v/org.ifinalframework/final-framework?label=maven&color=success)](https://mvnrepository.com/search?q=org.ifinal.finalframework)
 ![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/org.ifinalframework/final-framework?server=https://s01.oss.sonatype.org)
 ![Sonatype Nexus (Snapshot)](https://img.shields.io/nexus/s/org.ifinalframework/final-framework?server=https://s01.oss.sonatype.org)
-![GitHub Repo stars](https://img.shields.io/github/stars/final-projects/final-framework)
-![GitHub top language](https://img.shields.io/github/languages/top/final-projects/final-framework)
-[![GitHub language count](https://img.shields.io/github/languages/count/final-projects/final-framework)](https://github.com/likly/final-framework)
+![GitHub Repo stars](https://img.shields.io/github/stars/ifinal-io/final-frameworks)
+![GitHub top language](https://img.shields.io/github/languages/top/ifinal-io/final-frameworks)
+[![GitHub language count](https://img.shields.io/github/languages/count/final-projects/final-framework)](https://github.com/ifinal-io/final-frameworks)
 
 ![final-framework](src/images/final-framework@2x.png)
 
@@ -27,10 +27,10 @@
 
 ## 依赖
 
-| 组件            | 当前版本     | 最新版本                                                                                                                                                                                                   |
-|---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 组件            | 当前版本     | 最新版本                                                                                                                                                                                                  |
+|---------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `spring-boot` | `3.4.1`  | [![Maven Central](https://img.shields.io/maven-central/v/org.springframework.boot/spring-boot-starter-parent?label=maven&color=success)](https://mvnrepository.com/search?q=org.springframework.boot) |
-| `mybatis` | `3.5.19` | [![Maven Central](https://img.shields.io/maven-central/v/org.mybatis/mybatis?label=maven&color=success)](https://mvnrepository.com/search?q=org.mybatis) |
+| `mybatis`     | `3.5.14` | [![Maven Central](https://img.shields.io/maven-central/v/org.mybatis/mybatis?label=maven&color=success)](https://mvnrepository.com/search?q=org.mybatis)                                              |
 
 
 ## 特性
