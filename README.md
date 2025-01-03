@@ -1,7 +1,7 @@
 # final-framework
 
 ![CI](https://github.com/final-projects/final-framework/actions/workflows/ci.yml/badge.svg)
-[![codecov](https://codecov.io/github/ifinal-io/final-framework/graph/badge.svg?token=31vxLbJ33g)](https://codecov.io/github/ifinal-io/final-framework)
+[![codecov](https://codecov.io/github/ifinal-io/final-frameworks/graph/badge.svg?token=31vxLbJ33g)](https://codecov.io/github/ifinal-io/final-frameworks)
 [![GitHub](https://img.shields.io/github/license/final-projects/final-framework)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Maven Central](https://img.shields.io/maven-central/v/org.ifinalframework/final-framework?label=maven&color=success)](https://mvnrepository.com/search?q=org.ifinal.finalframework)
 ![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/org.ifinalframework/final-framework?server=https://s01.oss.sonatype.org)
@@ -24,6 +24,13 @@
   * `final-data-mybatis`: 通用mybatis
 * `final-boot`: 快速集成starters
 * `final-auto`: 注解处理器
+
+## 依赖
+
+| 组件            | 当前版本     | 最新版本                                                                                                                                                                                                   |
+|---------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `spring-boot` | `3.4.1`  | [![Maven Central](https://img.shields.io/maven-central/v/org.springframework.boot/spring-boot-starter-parent?label=maven&color=success)](https://mvnrepository.com/search?q=org.ifinal.finalframework) |
+
 
 ## 特性
 
