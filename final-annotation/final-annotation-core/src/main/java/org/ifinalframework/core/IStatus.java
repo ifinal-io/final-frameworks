@@ -16,14 +16,22 @@
 package org.ifinalframework.core;
 
 /**
- * IStatus.
+ * 状态接口.
  *
  * @author iimik
  * @version 1.4.2
  * @since 1.4.2
  */
 public interface IStatus<T extends IEnum<?>> {
+    /**
+     * 设置状态
+     * @param status 状态
+     */
     void setStatus(T status);
 
+    /**
+     * 获取状态
+     * @return 状态
+     */
     T getStatus();
 }

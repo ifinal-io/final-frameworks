@@ -18,7 +18,7 @@ package org.ifinalframework.core;
 import java.io.Serializable;
 
 /**
- * The marked {@code interface} of query to mark the target is a {@linkplain Object query}.
+ * {@code Query}查询标记接口，实现了该接口的对应，会被设定为查询{@code Query}对象，会被查询组件进行解析。
  *
  * @author iimik
  * @version 1.0.0
