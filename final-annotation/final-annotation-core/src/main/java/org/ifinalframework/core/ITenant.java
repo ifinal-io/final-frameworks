@@ -16,14 +16,24 @@
 package org.ifinalframework.core;
 
 /**
- * ITenant.
+ * 多租户接口.
  *
  * @author iimik
  * @version 1.4.2
  * @since 1.4.2
  */
 public interface ITenant {
+    /**
+     * 设置租户
+     *
+     * @param tenant 租户ID
+     */
     void setTenant(Long tenant);
 
+    /**
+     * 获取租户
+     *
+     * @return 租户ID
+     */
     Long getTenant();
 }
