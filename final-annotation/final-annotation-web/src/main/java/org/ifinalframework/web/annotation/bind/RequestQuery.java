@@ -15,16 +15,16 @@
 
 package org.ifinalframework.web.annotation.bind;
 
+import org.ifinalframework.core.IQuery;
+import org.ifinalframework.core.IView;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import org.ifinalframework.core.IQuery;
-import org.ifinalframework.core.IView;
-
 /**
- * RequestQuery.
+ * 指定查询的Query对象.
  *
  * @author iimik
  * @version 1.5.0
@@ -33,9 +33,18 @@ import org.ifinalframework.core.IView;
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RequestQuery {
+    /**
+     * 返回查询的Query对象
+     */
     Class<? extends IQuery> query() default IQuery.class;
 
+    /**
+     * 返回资源路径标识符
+     */
     String resource() default "resource";
 
+    /**
+     * 返回查询视图
+     */
     Class<?> view() default IView.class;
 }
